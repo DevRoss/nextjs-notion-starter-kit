@@ -8,7 +8,7 @@ module.exports = {
 
   // basic site info (required)
   name: 'Ross1997',
-  domain: 'https://ross1997.notion.site/Engineering-Wiki-23725910abd54ba19a5c4b917728364a',
+  domain: 'ross.selfcoding.cn',
   author: 'Ross1997',
 
   // open graph metadata (optional)
