@@ -7,15 +7,21 @@ import * as types from 'lib/types'
 export const PageHead: React.FC<types.PageProps> = ({ site }) => {
   return (
     <Head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101401601-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){window.dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-101401601-1"
+        />
 
-        gtag('config', 'GA_MEASUREMENT_ID');
-      </script>
-
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-101401601-1', { page_path: window.location.pathname });
+            `,
+          }}
+        />
       <meta charSet='utf-8' />
       <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
       <meta
