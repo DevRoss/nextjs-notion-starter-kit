@@ -77,10 +77,6 @@ export const Footer: React.FC<{
           </a>
         )}
       </div>
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTF6XMB"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
     </footer>
   )
 }
